@@ -1,0 +1,14 @@
+{
+  "name": "water-reminder-chrome-ext",
+  "version": "1.2.0",
+   "type": "module",
+  "scripts": {
+    "build": "node scripts/build-extensions.mjs",
+    "test:e2e": "playwright test --reporter=list,html",
+    "test": "npm run build && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "archiver": "^7.0.1"
+  }
+}
